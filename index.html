@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Icons-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>Resume - Stroia Anton Călin</title>
+</head>
+
+<body>
+    <!-- Header-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--Home-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Călin</span>
+                    <br> Student
+                </h1>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/calin-stroia-a240362a1" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/StroiaCalin" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/stroia.calin/?hl=en" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="Calin.png" style="max-width:50%; height:75%;">
+            </div>
+            
+        </section>
+
+        <!--About-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div>
+                    <p class="about__text">I'm a Computer Science student at the Technical University of Cluj-Napoca, passionate about
+                        software development and problem-solving. I have experience with OOP, Design Patterns,
+                        MVC/MVVM/MVP architectures, MySQL, Spring Framework, and React.
+                        I enjoy finding efficient and scalable solutions, writing clean code, and continuously learning new
+                        technologies. Always looking for opportunities to grow and build impactful software.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Skills-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <p class="skills__text">As a student at the Faculty of Automation and Computers, I have cultivated a strong foundation in the technologies and principles. My active participation in a frontend bootcamp hosted by Betfair has further deepened my knowledge of HTML, CSS, and JavaScript. This experience has equipped me with the necessary skills to build intuitive and responsive user interfaces.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-react skills__icon'></i>
+                            <span class="skills__name">REACT.JS</span>
+                        </div>
+                        <div class="skills__bar skills__react">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio-->
+        <section class="work section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="work__container bd-grid">
+                <a class="work__img" onclick="openPopup('Client_Server Poza','The application is designed to manage the inventory of medications and facilitate various operations concerning them. Users are granted different levels of access and permissions based on their roles, such as employee, manager, or administrator.The application employs a ClientServer architecture to ensure a clear separation between the presentation logic, the application data, and user interaction. This separation promotes code reusability and facilitates unit testing.')">
+                    <img src="Client-Server Pharmacy.png" alt="">
+                </a>
+                <a class="work__img" onclick="openPopup('Admin Poza','The Energy Management System is an application built with Java Spring and React, following a microservice architecture. The microservices communicate via REST APIs using RestTemplate.The frontend, developed with React, provides features such as authentication, user and devicemanagement, and energy consumption monitoring, using different databases. Additionally, a chatmicroservice has been developed, utilizing RabbitMQ and WebSockets for asynchronousmessaging between users.On the security side, the project integrates Spring Security, implementing user authenticationand authorization through token based security (JWT).Furthermore, the entire system has beed designed for deployment using Docker.')">
+                    <img src="Energy System Management.png" alt="">
+                </a>
+                <a class="work__img"  onclick="openPopup('Threads Poza','This project focuses on simulating clients standing in different lines using threads in Java.Each client is represented as a separate thread, and they stand in different queues, awaiting service.')">
+                    <img src="Threads.png" alt="">
+                </a>
+                <a class="work__img" onclick="openPopup('Store Poza','This MVC project aims to simulate the process of buying products from a database usingthe Model-View-Controller architecture in Java. In this project, the Model represents the datastructure of the products and the database interactions. The View is responsible for presentingthe user interface, displaying available products, and facilitating user interaction.The Controller acts as an intermediary between the Model and the View, handling user input,processing requests, and updating the Model.')">
+                    <img src="Title Store.png" alt="">
+                </a>
+                <a class="work__img" onclick="openPopup('Tastatura','This project focuses on the assembly language programming of a digital keyboard. Thisinvolves designing and implementing the functionality of a keyboard using low-level assembly instructions. Such a project could cover tasks such as handling keyboard input, processing keypresses, and all functionalities of the keyboard.')">
+                    <img src="Tasatura titlu.png" alt="">
+                </a>
+                <a class="work__img" onclick="openPopup('Betfair','The React Frontend Bootcamp organized by Betfair in colaboration with DigitalStack, held between October and the end of November 2024, was an intensive training program designed to lay the foundations for developing the frontend part of a web application.')">
+                    <img src="Frontend Bootcamp Betfair.png" alt="">
+                </a>
+            </div>
+            <div>
+                <button class="react__button react" onclick="openPopUpReact()">Press for React component</button>
+            </div>
+        </section>
+
+        <!-- Popup container -->
+<div id="popup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-img" src="Client_Server Poza.png" alt="Popup Image">
+        <div id="popup-desc"> 
+
+        </div>
+    </div>
+</div>
+
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact__container bd-grid">
+        <div class="contact__info">
+            <div class="contact__data">
+                <i class="contact__icon fas fa-phone"></i>
+                <p class="contact__text">+40 743207669</p>
+            </div>
+            <div class="contact__data">
+                <i class="contact__icon fas fa-envelope"></i>
+                <p class="contact__text">stroiacalin7@gmail.comm</p>
+            </div>
+            <div class="contact__data">
+                <i class="contact__icon fas fa-map-marker-alt"></i>
+                <p class="contact__text">Strada Dunarii 142, Cluj-Napoca</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/calin-stroia-a240362a1" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/StroiaCalin" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/stroia.calin/?hl=en" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </footer>
+
+
+    <div id="react-popup" class="popup-overlay" style="display:none;">
+        <div class="popup-content-react">
+            <button class="close" onclick="closePopupReact()">×</button>
+            <iframe class="popup-iframe" src="/index2.html"></iframe>
+        </div>
+    </div>
+    <button class="react__button react" onclick="openPopUpReact()">Press for React component</button>
+    
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
+    <!--=====REACTPOPUP =====-->
+
+    <script>
+function openPopUpReact() {
+    var overlay = document.getElementById('react-popup');
+    overlay.style.display = 'flex';
+}
+
+function closePopupReact() {
+    var overlay = document.getElementById('react-popup');
+    overlay.style.display = 'none';
+}
+
+
+
+        </script>
+        
+</body>
+
+</html>
+
+
